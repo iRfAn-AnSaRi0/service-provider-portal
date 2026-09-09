@@ -1,4 +1,4 @@
-export const validateRegister = (data) => {
+const validateRegister = (data) => {
     const errors = {};
 
     if (!data.name || data.name.trim().length < 3) {
@@ -23,7 +23,7 @@ export const validateRegister = (data) => {
     };
 };
 
-export const validateLogin = (data) => {
+const validateLogin = (data) => {
     const errors = {};
 
     if (!data.email) {
@@ -43,3 +43,5 @@ export const validateLogin = (data) => {
         errors,
     };
 };
+
+export { validateRegister, validateLogin };

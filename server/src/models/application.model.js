@@ -23,8 +23,14 @@ const applicationSchema = new Schema(
         },
 
         profilePhoto: {
-            type: String,
-            default: null,
+            url: {
+                type: String,
+                default: null
+            },
+            publicId: {
+                type: String,
+                default: null
+            }
         },
 
         serviceCategories: [
@@ -97,19 +103,26 @@ const applicationSchema = new Schema(
 
         documents: {
             identityProof: {
-                type: String,
-                default: null,
+                url: {
+                    type: String,
+                    default: null
+                },
+                publicId: {
+                    type: String,
+                    default: null
+                }
             },
 
             addressProof: {
-                type: String,
-                default: null,
-            },
-
-            experienceProof: {
-                type: String,
-                default: null,
-            },
+                url: {
+                    type: String,
+                    default: null
+                },
+                publicId: {
+                    type: String,
+                    default: null
+                }
+            }
         },
 
 
