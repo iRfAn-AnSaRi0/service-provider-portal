@@ -7,6 +7,8 @@ dotenv.config({
     path: './.env'
 })
 
+console.log("Mongo URI:", process.env.DB_URI);
+
 connectDB()
     .then(() => {
         app.listen(process.env.PORT || 8080, () => {

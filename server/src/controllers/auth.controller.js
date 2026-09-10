@@ -4,7 +4,7 @@ import { ApiResponse } from '../utils/api.response.js';
 import { validateRegister, validateLogin } from '../validators/auth.validator.js'
 import { User } from '../models/user.model.js'
 import jwt from 'jsonwebtoken'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 
 const generateAccessAndRefreshToken = (user) => {
 
